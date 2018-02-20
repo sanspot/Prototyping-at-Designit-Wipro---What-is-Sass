@@ -249,8 +249,25 @@ a {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+.primary, .primary.orange {
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.primary {
+  background-color: #0040BB;
+}
+
+.primary.orange {
+  background-color: #F86400;
+}
+
 /*
-%btn {
+@mixin btn {
   color: white;
   padding: 32px 32px;
   text-align: center;
@@ -259,33 +276,13 @@ a {
   font-family: $font-stack-helvetica;
 }
 
-.primary {
-  @extend %btn;
+a.primary {
+  @include btn;
   background-color: colour('primary');
 }
 
-.primary.orange {
-  @extend %btn;
+a.primary.orange {
+  @include btn;
   background-color: colour('secondary');
 }
-
 */
-a.primary {
-  color: white;
-  padding: 32px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  background-color: #0040BB;
-}
-
-a.primary.orange {
-  color: white;
-  padding: 32px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  background-color: #F86400;
-}
