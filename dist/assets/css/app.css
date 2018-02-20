@@ -1,0 +1,291 @@
+/* Bourboun documentation: https://www.bourbon.io/docs/latest/#all-buttons */
+/* Neat documentation: https://neat.bourbon.io/docs/latest/ */
+/*---------------------------------
+1. Page setup
+----------------------------------*/
+body,
+html {
+  height: 100%;
+}
+
+/*---------------------------------
+2. Breakpoints
+----------------------------------*/
+/*---------------------------------
+3. Container
+----------------------------------*/
+section,
+.container {
+  background-image: repeating-linear-gradient(to right, transparent, transparent 1rem, rgba(0, 212, 255, 0.25) 1rem, rgba(0, 212, 255, 0.25) calc(100% - 2rem + 1rem));
+}
+section::after,
+.container::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+@media (min-width: 600px) {
+  section,
+  .container {
+    background-image: repeating-linear-gradient(to right, transparent, transparent 1rem, rgba(109, 208, 12, 0.25) 1rem, rgba(109, 208, 12, 0.25) calc(50% - 1.5rem + 1rem));
+  }
+  section::after,
+  .container::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+@media (min-width: 900px) {
+  section,
+  .container {
+    background-image: repeating-linear-gradient(to right, transparent, transparent 1rem, rgba(244, 208, 231, 0.25) 1rem, rgba(244, 208, 231, 0.25) calc(16.6666666667% - 1.1666666667rem + 1rem));
+  }
+  section::after,
+  .container::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  section,
+  .container {
+    background-image: repeating-linear-gradient(to right, transparent, transparent 1rem, rgba(0, 212, 255, 0.25) 1rem, rgba(0, 212, 255, 0.25) calc(8.3333333333% - 1.0833333333rem + 1rem));
+  }
+  section::after,
+  .container::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+/*---------------------------------
+4. Standard Columns
+----------------------------------*/
+.full-column {
+  width: calc(100% - 2rem);
+  float: left;
+  margin-left: 1rem;
+}
+
+.half-column {
+  width: calc(100% - 2rem);
+  float: left;
+  margin-left: 1rem;
+}
+@media (min-width: 600px) {
+  .half-column {
+    width: calc(50% - 1.5rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .half-column {
+    width: calc(50% - 1.5rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .half-column {
+    width: calc(50% - 1.5rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+
+.one-thirds-column {
+  width: calc(100% - 2rem);
+  float: left;
+  margin-left: 1rem;
+}
+@media (min-width: 600px) {
+  .one-thirds-column {
+    width: calc(100% - 2rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .one-thirds-column {
+    width: calc(33.3333333333% - 1.3333333333rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .one-thirds-column {
+    width: calc(33.3333333333% - 1.3333333333rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+
+.fourth-column {
+  width: calc(100% - 2rem);
+  float: left;
+  margin-left: 1rem;
+}
+@media (min-width: 600px) {
+  .fourth-column {
+    width: calc(50% - 1.5rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .fourth-column {
+    width: calc(50% - 1.5rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .fourth-column {
+    width: calc(25% - 1.25rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+
+.sixth-column {
+  width: calc(100% - 2rem);
+  float: left;
+  margin-left: 1rem;
+}
+@media (min-width: 600px) {
+  .sixth-column {
+    width: calc(50% - 1.5rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .sixth-column {
+    width: calc(33.3333333333% - 1.3333333333rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .sixth-column {
+    width: calc(16.6666666667% - 1.1666666667rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+
+.twelfth-column {
+  width: calc(100% - 2rem);
+  float: left;
+  margin-left: 1rem;
+}
+@media (min-width: 600px) {
+  .twelfth-column {
+    width: calc(50% - 1.5rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .twelfth-column {
+    width: calc(33.3333333333% - 1.3333333333rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .twelfth-column {
+    width: calc(8.3333333333% - 1.0833333333rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+
+.two-thirds-column {
+  width: calc(100% - 2rem);
+  float: left;
+  margin-left: 1rem;
+}
+@media (min-width: 600px) {
+  .two-thirds-column {
+    width: calc(100% - 2rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .two-thirds-column {
+    width: calc(66.6666666667% - 1.6666666667rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .two-thirds-column {
+    width: calc(66.6666666667% - 1.6666666667rem);
+    float: left;
+    margin-left: 1rem;
+  }
+}
+
+/*ignore the below as it's only for the grid.html page example */
+div.container.grid-example section div {
+  margin-bottom: 1rem;
+}
+
+/*ignore teh above as it's only for the grid.html page example */
+/* A function that will allow us to get any color from our palette using the color(); function */
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/*
+%btn {
+  color: white;
+  padding: 32px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: $font-stack-helvetica;
+}
+
+.primary {
+  @extend %btn;
+  background-color: colour('primary');
+}
+
+.primary.orange {
+  @extend %btn;
+  background-color: colour('secondary');
+}
+
+*/
+a.primary {
+  color: white;
+  padding: 32px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background-color: #0040BB;
+}
+
+a.primary.orange {
+  color: white;
+  padding: 32px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background-color: #F86400;
+}

@@ -1,0 +1,41 @@
+/*
+%btn {
+  color: white;
+  padding: 32px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: $font-stack-helvetica;
+}
+
+.primary {
+  @extend %btn;
+  background-color: colour('primary');
+}
+
+.primary.orange {
+  @extend %btn;
+  background-color: colour('secondary');
+}
+
+*/
+
+
+@mixin btn {
+  color: white;
+  padding: 32px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: $font-stack-helvetica;
+}
+
+a.primary {
+  @include btn;
+  background-color: colour('primary');
+}
+
+a.primary.orange {
+  @include btn;
+  background-color: colour('secondary');
+}

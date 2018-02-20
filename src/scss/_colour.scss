@@ -1,0 +1,15 @@
+$palette: (
+  'primary': #0040BB,
+  'secondary': #F86400,
+);
+
+
+
+/* A function that will allow us to get any color from our palette using the color(); function */
+@function colour($key: 'primary') {
+  @return map-get($palette, $key);
+}
+
+@function colour($key: 'secondary') {
+  @return map-get($palette, $key);
+}
