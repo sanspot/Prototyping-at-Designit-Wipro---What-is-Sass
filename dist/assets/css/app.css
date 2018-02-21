@@ -232,12 +232,6 @@ section::after,
   }
 }
 
-/*ignore the below as it's only for the grid.html page example */
-div.container.grid-example section div {
-  margin-bottom: 1rem;
-}
-
-/*ignore teh above as it's only for the grid.html page example */
 /* A function that will allow us to get any color from our palette using the color(); function */
 h1,
 h2,
@@ -249,7 +243,10 @@ a {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-.primary, .primary.orange {
+/* ++++++++++++++++++++++++
++++++++++++++++++++++++++++   TEMPLATE
+*/
+.primary, .primary.orange, .primary.onColour, .secondary, .secondary.onColour {
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -258,12 +255,41 @@ a {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+.secondary {
+  border: solid;
+  border-width: .1rem;
+}
+
+.primary.onColour, .secondary {
+  color: #0040BB;
+}
+
+/* ++++++++++++++++++++++++
++++++++++++++++++++++++++++   Primary
+*/
 .primary {
   background-color: #0040BB;
 }
 
 .primary.orange {
   background-color: #F86400;
+}
+
+.primary.onColour {
+  background-color: white;
+}
+
+/* ++++++++++++++++++++++++
++++++++++++++++++++++++++++   Secondary
+*/
+.secondary {
+  background-color: white;
+  border-color: #0040BB;
+}
+
+.secondary.onColour {
+  background-color: #0040BB;
+  border-color: white;
 }
 
 /*
@@ -286,3 +312,13 @@ a.primary.orange {
   background-color: colour('secondary');
 }
 */
+/*ignore the below as it's only for the grid.html page example */
+div.container.grid-example section div {
+  margin-bottom: 1rem;
+}
+
+/*ignore teh above as it's only for the grid.html page example */
+.colourBack {
+  padding: 1rem;
+  background-color: #0040BB;
+}
