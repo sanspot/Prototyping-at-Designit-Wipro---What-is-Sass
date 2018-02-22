@@ -26,30 +26,30 @@ $neat-large: ( columns: 12, gutter: 1rem, media: "(min-width: 1200px)", color: r
 section,
 .container {
   @include grid-container;
-  @include grid-visual;
+  //@include grid-visual;
 
   @include grid-media($neat-small) {
        @include grid-container($neat-small);
-       @include grid-visual;
+       //@include grid-visual;
   }
   @include grid-media($neat-medium) {
        @include grid-container($neat-medium);
-       @include grid-visual;
+       //@include grid-visual;
   }
   @include grid-media($neat-large) {
        @include grid-container($neat-large);
-       @include grid-visual;
+       //@include grid-visual;
   }
 }
 
 /*---------------------------------
 4. Standard Columns
 ----------------------------------*/
-.full-column {
+.w-100  {
     @include grid-column(1);
 }
 
-.half-column {
+.w-50 {
     @include grid-column(1);
     @include grid-media($neat-small) {
          @include grid-column(1);
@@ -62,7 +62,7 @@ section,
     }
 }
 
-.one-thirds-column {
+.w-30 {
     @include grid-column(1);
     @include grid-media($neat-small) {
          @include grid-column(2);
@@ -75,7 +75,7 @@ section,
     }
 }
 
-.fourth-column {
+.w-25 {
     @include grid-column(1);
     @include grid-media($neat-small) {
          @include grid-column(1);
@@ -88,7 +88,7 @@ section,
     }
 }
 
-.sixth-column {
+.w-15 {
     @include grid-column(1);
     @include grid-media($neat-small) {
          @include grid-column(1);
@@ -101,7 +101,7 @@ section,
     }
 }
 
-.twelfth-column {
+.w-10 {
     @include grid-column(1);
     @include grid-media($neat-small) {
          @include grid-column(1);
@@ -111,18 +111,5 @@ section,
     }
     @include grid-media($neat-large) {
          @include grid-column(1);
-    }
-}
-
-.two-thirds-column {
-    @include grid-column(1);
-    @include grid-media($neat-small) {
-         @include grid-column(2);
-    }
-    @include grid-media($neat-medium) {
-         @include grid-column(4);
-    }
-    @include grid-media($neat-large) {
-         @include grid-column(8);
     }
 }

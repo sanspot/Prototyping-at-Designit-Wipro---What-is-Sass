@@ -14,10 +14,6 @@ html {
 /*---------------------------------
 3. Container
 ----------------------------------*/
-section,
-.container {
-  background-image: repeating-linear-gradient(to right, transparent, transparent 1rem, rgba(0, 212, 255, 0.25) 1rem, rgba(0, 212, 255, 0.25) calc(100% - 2rem + 1rem));
-}
 section::after,
 .container::after {
   clear: both;
@@ -25,10 +21,6 @@ section::after,
   display: block;
 }
 @media (min-width: 600px) {
-  section,
-  .container {
-    background-image: repeating-linear-gradient(to right, transparent, transparent 1rem, rgba(109, 208, 12, 0.25) 1rem, rgba(109, 208, 12, 0.25) calc(50% - 1.5rem + 1rem));
-  }
   section::after,
   .container::after {
     clear: both;
@@ -37,10 +29,6 @@ section::after,
   }
 }
 @media (min-width: 900px) {
-  section,
-  .container {
-    background-image: repeating-linear-gradient(to right, transparent, transparent 1rem, rgba(244, 208, 231, 0.25) 1rem, rgba(244, 208, 231, 0.25) calc(16.6666666667% - 1.1666666667rem + 1rem));
-  }
   section::after,
   .container::after {
     clear: both;
@@ -49,10 +37,6 @@ section::after,
   }
 }
 @media (min-width: 1200px) {
-  section,
-  .container {
-    background-image: repeating-linear-gradient(to right, transparent, transparent 1rem, rgba(0, 212, 255, 0.25) 1rem, rgba(0, 212, 255, 0.25) calc(8.3333333333% - 1.0833333333rem + 1rem));
-  }
   section::after,
   .container::after {
     clear: both;
@@ -64,169 +48,142 @@ section::after,
 /*---------------------------------
 4. Standard Columns
 ----------------------------------*/
-.full-column {
+.w-100 {
   width: calc(100% - 2rem);
   float: left;
   margin-left: 1rem;
 }
 
-.half-column {
+.w-50 {
   width: calc(100% - 2rem);
   float: left;
   margin-left: 1rem;
 }
 @media (min-width: 600px) {
-  .half-column {
+  .w-50 {
     width: calc(50% - 1.5rem);
     float: left;
     margin-left: 1rem;
   }
 }
 @media (min-width: 900px) {
-  .half-column {
+  .w-50 {
     width: calc(50% - 1.5rem);
     float: left;
     margin-left: 1rem;
   }
 }
 @media (min-width: 1200px) {
-  .half-column {
+  .w-50 {
     width: calc(50% - 1.5rem);
     float: left;
     margin-left: 1rem;
   }
 }
 
-.one-thirds-column {
+.w-30 {
   width: calc(100% - 2rem);
   float: left;
   margin-left: 1rem;
 }
 @media (min-width: 600px) {
-  .one-thirds-column {
+  .w-30 {
     width: calc(100% - 2rem);
     float: left;
     margin-left: 1rem;
   }
 }
 @media (min-width: 900px) {
-  .one-thirds-column {
+  .w-30 {
     width: calc(33.3333333333% - 1.3333333333rem);
     float: left;
     margin-left: 1rem;
   }
 }
 @media (min-width: 1200px) {
-  .one-thirds-column {
+  .w-30 {
     width: calc(33.3333333333% - 1.3333333333rem);
     float: left;
     margin-left: 1rem;
   }
 }
 
-.fourth-column {
+.w-25 {
   width: calc(100% - 2rem);
   float: left;
   margin-left: 1rem;
 }
 @media (min-width: 600px) {
-  .fourth-column {
+  .w-25 {
     width: calc(50% - 1.5rem);
     float: left;
     margin-left: 1rem;
   }
 }
 @media (min-width: 900px) {
-  .fourth-column {
+  .w-25 {
     width: calc(50% - 1.5rem);
     float: left;
     margin-left: 1rem;
   }
 }
 @media (min-width: 1200px) {
-  .fourth-column {
+  .w-25 {
     width: calc(25% - 1.25rem);
     float: left;
     margin-left: 1rem;
   }
 }
 
-.sixth-column {
+.w-15 {
   width: calc(100% - 2rem);
   float: left;
   margin-left: 1rem;
 }
 @media (min-width: 600px) {
-  .sixth-column {
+  .w-15 {
     width: calc(50% - 1.5rem);
     float: left;
     margin-left: 1rem;
   }
 }
 @media (min-width: 900px) {
-  .sixth-column {
+  .w-15 {
     width: calc(33.3333333333% - 1.3333333333rem);
     float: left;
     margin-left: 1rem;
   }
 }
 @media (min-width: 1200px) {
-  .sixth-column {
+  .w-15 {
     width: calc(16.6666666667% - 1.1666666667rem);
     float: left;
     margin-left: 1rem;
   }
 }
 
-.twelfth-column {
+.w-10 {
   width: calc(100% - 2rem);
   float: left;
   margin-left: 1rem;
 }
 @media (min-width: 600px) {
-  .twelfth-column {
+  .w-10 {
     width: calc(50% - 1.5rem);
     float: left;
     margin-left: 1rem;
   }
 }
 @media (min-width: 900px) {
-  .twelfth-column {
+  .w-10 {
     width: calc(33.3333333333% - 1.3333333333rem);
     float: left;
     margin-left: 1rem;
   }
 }
 @media (min-width: 1200px) {
-  .twelfth-column {
+  .w-10 {
     width: calc(8.3333333333% - 1.0833333333rem);
-    float: left;
-    margin-left: 1rem;
-  }
-}
-
-.two-thirds-column {
-  width: calc(100% - 2rem);
-  float: left;
-  margin-left: 1rem;
-}
-@media (min-width: 600px) {
-  .two-thirds-column {
-    width: calc(100% - 2rem);
-    float: left;
-    margin-left: 1rem;
-  }
-}
-@media (min-width: 900px) {
-  .two-thirds-column {
-    width: calc(66.6666666667% - 1.6666666667rem);
-    float: left;
-    margin-left: 1rem;
-  }
-}
-@media (min-width: 1200px) {
-  .two-thirds-column {
-    width: calc(66.6666666667% - 1.6666666667rem);
     float: left;
     margin-left: 1rem;
   }
@@ -236,11 +193,52 @@ section::after,
 h1,
 h2,
 h3,
+h4,
 p,
 ul,
 li,
 a {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/*=================================
+=================================== Headings
+===================================
+*/
+h1 {
+  font-size: 3rem;
+  line-height: 2.625rem;
+  color: #0040BB;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: .5625rem 0;
+  border: solid;
+  border-width: .5625rem 0;
+  border-color: #009ED7;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+
+/*=================================
+=================================== Headings
+===================================
+*/
+.primary, .primary.orange, .primary.onColour, .secondary, .secondary.onColour {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 /* ++++++++++++++++++++++++
@@ -260,10 +258,6 @@ a {
   border-width: .1rem;
 }
 
-.primary.onColour, .secondary {
-  color: #0040BB;
-}
-
 /* ++++++++++++++++++++++++
 +++++++++++++++++++++++++++   Primary
 */
@@ -277,12 +271,14 @@ a {
 
 .primary.onColour {
   background-color: white;
+  color: #0040BB;
 }
 
 /* ++++++++++++++++++++++++
 +++++++++++++++++++++++++++   Secondary
 */
 .secondary {
+  color: #0040BB;
   background-color: white;
   border-color: #0040BB;
 }
@@ -312,13 +308,25 @@ a.primary.orange {
   background-color: colour('secondary');
 }
 */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ GRID Layout
+*/
 /*ignore the below as it's only for the grid.html page example */
 div.container.grid-example section div {
   margin-bottom: 1rem;
 }
 
 /*ignore teh above as it's only for the grid.html page example */
-.colourBack {
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ BUTTONS Layout
+*/
+.blueBack {
   padding: 1rem;
   background-color: #0040BB;
+}
+
+.margin-top {
+  margin-top: 6rem;
+  border-top: solid;
+  border-width: thin;
 }

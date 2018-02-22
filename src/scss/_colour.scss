@@ -1,6 +1,8 @@
 $palette: (
   'primary': #0040BB,
-  'secondary': #F86400,
+  'orange': #F86400,
+  'secondary-blue': #009ED7,
+  'primary-gray': #333333
 );
 
 
@@ -10,6 +12,6 @@ $palette: (
   @return map-get($palette, $key);
 }
 
-@function colour($key: 'secondary') {
+@function colour($key: 'orange') {
   @return map-get($palette, $key);
 }

@@ -1,10 +1,23 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ GRID Layout
+*/
 /*ignore the below as it's only for the grid.html page example */
 div.container.grid-example section div {
   margin-bottom: 1rem;
 }
 /*ignore teh above as it's only for the grid.html page example */
 
-.colourBack {
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ BUTTONS Layout
+*/
+.blueBack {
   padding: 1rem;
   background-color: colour('primary');
+}
+
+.margin-top {
+  margin-top: 6rem;
+  border-top: solid;
+  border-width: thin;
 }

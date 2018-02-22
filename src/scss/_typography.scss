@@ -1,9 +1,54 @@
 h1,
 h2,
 h3,
+h4,
 p,
 ul,
 li,
 a {
   font-family: $font-stack-helvetica;
+}
+
+
+/*=================================
+=================================== Headings
+===================================
+*/
+h1 {
+  font-size: 3rem;
+  line-height: 2.625rem;
+  color: colour('primary');
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: .5625rem 0;
+  border: solid;
+  border-width: .5625rem 0;
+  border-color: colour('secondary-blue');
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  color: colour('primary-grey');
+}
+
+h3 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: colour('primary-grey');
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: colour('primary-grey');
+}
+
+/*=================================
+=================================== Headings
+===================================
+*/
+%type--button_copy {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
