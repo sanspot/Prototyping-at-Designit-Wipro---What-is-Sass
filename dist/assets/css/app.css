@@ -236,78 +236,49 @@ h4 {
 =================================== Headings
 ===================================
 */
-.primary, .primary.orange, .primary.onColour, .secondary, .secondary.onColour {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
 /* ++++++++++++++++++++++++
 +++++++++++++++++++++++++++   TEMPLATE
 */
-.primary, .primary.orange, .primary.onColour, .secondary, .secondary.onColour {
+.primary {
+  font-weight: bold;
+  font-size: 1.2rem;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-.secondary {
-  border: solid;
-  border-width: .1rem;
-}
-
-/* ++++++++++++++++++++++++
-+++++++++++++++++++++++++++   Primary
-*/
-.primary {
   background-color: #0040BB;
 }
-
 .primary.orange {
   background-color: #F86400;
 }
-
 .primary.onColour {
   background-color: white;
   color: #0040BB;
 }
 
-/* ++++++++++++++++++++++++
-+++++++++++++++++++++++++++   Secondary
-*/
 .secondary {
-  color: #0040BB;
-  background-color: white;
-  border-color: #0040BB;
-}
-
-.secondary.onColour {
-  background-color: #0040BB;
-  border-color: white;
-}
-
-/*
-@mixin btn {
+  font-weight: bold;
+  font-size: 1.2rem;
   color: white;
-  padding: 32px 32px;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: $font-stack-helvetica;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #0040BB;
+  color: #0040BB;
+}
+.secondary.onColour {
+  background-color: transparent;
+  border-color: white;
+  color: white;
 }
 
-a.primary {
-  @include btn;
-  background-color: colour('primary');
-}
-
-a.primary.orange {
-  @include btn;
-  background-color: colour('secondary');
-}
-*/
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ GRID Layout
 */

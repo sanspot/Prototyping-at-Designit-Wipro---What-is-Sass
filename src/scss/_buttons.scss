@@ -1,8 +1,8 @@
 /* ++++++++++++++++++++++++
 +++++++++++++++++++++++++++   TEMPLATE
 */
-%btn {
-  @extend %type--button_copy;
+@mixin btn_base {
+  @include type--button_copy;  //a mixins I made in the typography scss
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -11,68 +11,32 @@
   font-family: $font-stack-helvetica;
 }
 
-%btn_secondary {
-  border: solid;
-  border-width: .1rem;
-}
 
-
-
-/* ++++++++++++++++++++++++
-+++++++++++++++++++++++++++   Primary
-*/
 .primary {
-  @extend %btn;
+  @include btn_base;
   background-color: colour('primary');
+  //orange btn
+  &.orange {
+    background-color: colour('orange');
+  }
+  //on colour
+  &.onColour {
+    background-color: white;
+    color: colour('primary');
+  }
 }
 
-.primary.orange {
-  @extend %btn;
-  background-color: colour('orange');
-}
-
-.primary.onColour {
-  @extend %btn;
-  background-color: white;
-  color: colour('primary');
-}
-
-/* ++++++++++++++++++++++++
-+++++++++++++++++++++++++++   Secondary
-*/
 .secondary {
-  @extend %btn;
-  @extend %btn_secondary;
-  color: colour('primary');
-  background-color: white;
+  @include btn_base;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 3px;
   border-color: colour('primary');
+  color: colour('primary');
+  //on colour
+  &.onColour {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+  }
 }
-
-
-.secondary.onColour {
-  @extend %btn;
-  background-color: colour('primary');
-  border-color: white;
-}
-
-
-/*
-@mixin btn {
-  color: white;
-  padding: 32px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: $font-stack-helvetica;
-}
-
-a.primary {
-  @include btn;
-  background-color: colour('primary');
-}
-
-a.primary.orange {
-  @include btn;
-  background-color: colour('secondary');
-}
-*/
